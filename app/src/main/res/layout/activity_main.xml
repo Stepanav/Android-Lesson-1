@@ -1,10 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/FirstText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First program for Android"
+        android:textColor="@color/purple_700"
+        android:textSize="36sp"
+        android:textStyle="italic" />
 
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:checked="false"
+        android:text="Switch"
+        android:textOff="OFF"
+        android:textOn="ON"
+        app:showText="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <EditText
+            android:id="@+id/COOL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:text="Android is COOL!" />
+
+        <EditText
+            android:id="@+id/Hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Hello, World!!!"
+            android:inputType="phone"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/HighButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button High"
+            android:textColor="#aaddaa"
+            android:textSize="3mm"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/JustText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text, just text"
+            android:textColor="@color/purple_700"
+            android:textSize="24dp"
+            android:textStyle="italic" />
+
+        <ToggleButton
+            android:id="@+id/ToggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textOff="Toggle Button On"
+            android:textOn="Toggle Button Off" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="125dp"
+        android:text="ON"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/BigButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/cardview_compat_inset_shadow"
+        android:layout_weight="1"
+        android:text="Big Button"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="6mm"
+        android:textStyle="bold" />
 
 </LinearLayout>
